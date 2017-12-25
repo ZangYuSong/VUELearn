@@ -1,0 +1,11 @@
+{
+    "name": "pioneer",
+    "version": "1.0.0",
+    "main": "pioneer.js",
+    "author": "zys",
+    "license": "MIT",
+    "dependencies": {
+        "eslint": "^4.13.1",
+        "prettier-eslint": "^8.5.0"
+    }
+}

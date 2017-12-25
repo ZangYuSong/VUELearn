@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" [(value)]="value">
+    <button (click)="click('aaa')">{{buttonText}}</button>
+    <div>
+        {{value}}
+    </div>
+    <script src="./src/pioneer-tools.js"></script>
+    <script src="./src/pioneer-index.js"></script>
+    <script>
+        var pr = new PR({
+            "data": {
+                "value": "123",
+                "buttonText": "确认"
+            },
+            "methods": {
+                "click": function (str) {
+                    console.log(str);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
